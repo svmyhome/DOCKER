@@ -1,0 +1,7 @@
+Create image:
+
+docker build -t svmyhome/docker_allure:v1 .
+
+Create container:
+
+docker run -d -v allurenewman:/allurenewman svmyhome/docker_allure:v1

@@ -1,0 +1,8 @@
+Create image:
+
+docker build -t svmyhome/docker_newman:v1 .
+
+
+Create container:
+
+docker run -d --name d_neman1 -v allurenewman:/allurenewman svmyhome/docker_newman:v1

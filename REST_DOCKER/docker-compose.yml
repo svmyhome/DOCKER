@@ -1,0 +1,37 @@
+version: "3.3"
+services:
+  newman_collection:
+    build:
+      context: .
+      dockerfile: ./DockerNewman/Dockerfile
+    container_name: newman_swapi
+    ports:
+    - 3000:3000
+    networks:
+    - myTestNetwork
+    volumes:
+    - allurenewman:/allurenewman/
+    - ./pass:/allurenewman/pass
+#    profiles: ["start_collection"]
+    # файлы надо размещать тут, иначе придется пересобирать образ
+
+  allure_report:
+    build:
+      context: .
+      dockerfile: ./AllureReport/Dockerfile
+    container_name: allure_swapi
+    networks:
+    - myTestNetwork
+    volumes:
+    - allurenewman:/allurenewman/
+#    depends_on:
+#    - newman_collection
+#    profiles:
+#    - generate_report
+networks:
+  myTestNetwork:
+    driver: bridge
+
+volumes:
+  allurenewman:
+# создает образ dockernewman_allurenewman , понять как сделать правильно

@@ -1,0 +1,1123 @@
+{
+	"info": {
+		"_postman_id": "9d04de1c-4e14-4248-9380-2ecbcbc25030",
+		"name": "SWApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"     pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is correct\", function () {",
+							"     pm.expect(jsonData.name).to.equal(\"Luke Skywalker\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/1",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"     pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is correct\", function () {",
+							"     pm.expect(jsonData.name).to.equal(\"Luke Skywalker\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/1",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"     pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is correct\", function () {",
+							"     pm.expect(jsonData.name).to.equal(\"Luke Skywalker\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/4",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"     pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is correct\", function () {",
+							"     pm.expect(jsonData.name).to.equal(\"Luke Skywalker\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/3",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"     pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is correct\", function () {",
+							"     pm.expect(jsonData.name).to.equal(\"C-3PO\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/2",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"     pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is correct\", function () {",
+							"     pm.expect(jsonData.name).to.equal(\"C-3PO\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/2",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"     pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is correct\", function () {",
+							"     pm.expect(jsonData.name).to.equal(\"C-3PO\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/2",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"     pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is correct\", function () {",
+							"     pm.expect(jsonData.name).to.equal(\"C-3PO\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/2",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"     pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is correct\", function () {",
+							"     pm.expect(jsonData.name).to.equal(\"C-3PO\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/2",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"     pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is correct\", function () {",
+							"     pm.expect(jsonData.name).to.equal(\"C-3PO\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/2",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "11",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"     pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is correct\", function () {",
+							"     pm.expect(jsonData.name).to.equal(\"C-3PO\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/2",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "12",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"     pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is correct\", function () {",
+							"     pm.expect(jsonData.name).to.equal(\"C-3PO\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/2",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "13",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"     pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is correct\", function () {",
+							"     pm.expect(jsonData.name).to.equal(\"C-3PO\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/2",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "14",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"     pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is correct\", function () {",
+							"     pm.expect(jsonData.name).to.equal(\"C-3PO\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/2",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "15",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"     pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is correct\", function () {",
+							"     pm.expect(jsonData.name).to.equal(\"C-3PO\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/2",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "16",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"     pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is correct\", function () {",
+							"     pm.expect(jsonData.name).to.equal(\"C-3PO\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/2",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "17",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"     pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is correct\", function () {",
+							"     pm.expect(jsonData.name).to.equal(\"C-3PO\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/2",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "18",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"     pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is correct\", function () {",
+							"     pm.expect(jsonData.name).to.equal(\"C-3PO\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/2",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "19",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"     pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is correct\", function () {",
+							"     pm.expect(jsonData.name).to.equal(\"C-3PO\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/2",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "20",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"     pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is correct\", function () {",
+							"     pm.expect(jsonData.name).to.equal(\"C-3PO\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/2",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "21",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"     pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is correct\", function () {",
+							"     pm.expect(jsonData.name).to.equal(\"C-3PO\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/2",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "22",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"     pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is correct\", function () {",
+							"     pm.expect(jsonData.name).to.equal(\"C-3PO\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/2",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "23",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"     pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is correct\", function () {",
+							"     pm.expect(jsonData.name).to.equal(\"C-3PO\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/2",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "24",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"     pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is correct\", function () {",
+							"     pm.expect(jsonData.name).to.equal(\"C-3PO\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/2",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "25",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"     pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is correct\", function () {",
+							"     pm.expect(jsonData.name).to.equal(\"C-3PO\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/2",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "26",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"     pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Name is correct\", function () {",
+							"     pm.expect(jsonData.name).to.equal(\"C-3PO\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://swapi.dev/api/people/2",
+					"protocol": "https",
+					"host": [
+						"swapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"people",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"console.log(\"Привет\");",
+					"setTimeout(() => { console.log(\"мир\"); }, 3000);"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
