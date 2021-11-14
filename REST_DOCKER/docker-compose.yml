@@ -12,7 +12,7 @@ services:
     volumes:
     - allurenewman:/allurenewman/
     - ./pass:/allurenewman/pass
-#    profiles: ["start_collection"]
+    profiles: ["start_collection"]
     # файлы надо размещать тут, иначе придется пересобирать образ
 
   allure_report:
@@ -26,8 +26,8 @@ services:
     - allurenewman:/allurenewman/
 #    depends_on:
 #    - newman_collection
-#    profiles:
-#    - generate_report
+    profiles:
+    - generate_report
 networks:
   myTestNetwork:
     driver: bridge
