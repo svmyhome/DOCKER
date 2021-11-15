@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: ./DockerNewman/Dockerfile
-    container_name: newman_swapi
+    container_name: "${CONTAINER_NAME_1}"
     ports:
     - 3000:3000
     networks:
@@ -19,7 +19,7 @@ services:
     build:
       context: .
       dockerfile: ./AllureReport/Dockerfile
-    container_name: allure_swapi
+    container_name: "${CONTAINER_NAME_2}"
     networks:
     - myTestNetwork
     volumes:
