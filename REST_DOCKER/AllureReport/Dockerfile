@@ -1,5 +1,6 @@
 FROM node:14-alpine
-MAINTAINER Vladimir Sarychev: svmyhome@mail.ru
+LABEL author="Vladimir Sarychev"
+LABEL email="svmyhome@mail.ru"
 RUN apk update && apk add openjdk8
 WORKDIR /opt
 RUN wget -c https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.15.0/allure-commandline-2.15.0.tgz

@@ -1,0 +1,16 @@
+version: "3.3"
+services:
+  newman_collection:
+    build:
+      context: .
+      dockerfile: ./DockerNewman/Dockerfile
+    container_name:  start_collection #"${CONTAINER_NAME_1}" поправить env файл
+    ports:
+    - 3000:3000
+    networks:
+    - myTestNetwork
+    volumes:
+    - allurenewman:/allurenewman/
+    - ./pass:/allurenewman/pass
+    profiles: ["start_collection"]
+    # файлы надо размещать тут, иначе придется пересобирать образ

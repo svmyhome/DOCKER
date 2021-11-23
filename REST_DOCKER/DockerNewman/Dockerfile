@@ -1,5 +1,6 @@
 FROM node:14-alpine
-MAINTAINER Vladimir Sarychev: svmyhome@mail.ru
+LABEL author="Vladimir Sarychev"
+LABEL email="svmyhome@mail.ru"
 RUN npm install -g newman newman-reporter-allure
 VOLUME ["/allurenewman"]
 WORKDIR /allurenewman
